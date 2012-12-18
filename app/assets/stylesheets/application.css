@@ -1,0 +1,154 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ .eLighterButton{
+    background: scroll left bottom #F4F8FD;
+    border-color: #D5D5D5 #999999 #999999 #D5D5D5;
+    border-right: 1px solid #999999;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 1.8;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+
+table#my_library{
+ border-collapse:collapse;
+}
+table#my_library,th, td
+{
+border: 1px solid black;
+}
+
+/* start popup css */
+.popup, #show_friends_list, #enter_email_popup{
+  position:absolute;
+  font-family:verdana;
+  font-size:13px;
+  padding:10px;
+  background-color:rgb(240,240,240);
+  border:2px solid grey;
+  z-index:100000000000000000;
+  display:none
+  
+}
+
+.popup {
+  margin:100px auto;
+  left: 500px;
+  top: 100px;
+  width:auto;
+  height:auto;
+}
+
+.cancel {
+  display:relative;
+  cursor:pointer;
+  margin:0;
+  float:right;
+  height:10px;
+  width:14px;
+  padding:0 0 5px 0;
+  background-color:red;
+  text-align:center;
+  font-weight:bold;
+  font-size:11px;
+  color:white;
+  border-radius:3px;
+  z-index:100000000000000000;
+}
+.header {
+  background: none repeat scroll 0 0 green;
+}
+.body {}
+.icon {
+  float: left;
+}
+.select_friends_link{
+  display: inline;
+  float: left;
+  font-size: 10px;
+  margin: 20px 0 0 -25px;
+}
+/* end popup css */
+
+#show_friends_list {
+  left: 425px;
+  top: 90px;
+  width:500px;
+  height:450px;
+}
+#contents {
+	height: 250px;
+	width: 400px;
+}
+
+/* tabs css */
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+#facebook, #google{
+  height:280px;
+  overflow:auto;
+  background:#fff;
+}
+
+.checkbox_list{
+  display: block;
+}
+
+#enter_email_popup{
+  margin:100px auto;
+  left: 500px;
+  top: 100px;
+  width:auto;
+  height:auto;
+}
+/* end tabs css */

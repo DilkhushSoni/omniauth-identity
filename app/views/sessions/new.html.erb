@@ -1,0 +1,31 @@
+<h1><%= t(:sign_in)%></h1>
+
+<p>
+	<strong><%= t(:sign_in_services) %></strong>
+</p>
+
+<div class="auth_providers">	
+	<a href="/auth/facebook" class="auth_provider"> <%= image_tag "facebook.png", size: "64x64", alt: "Facebook" %>
+	<%=t(:facebook)%> </a>
+</div>
+
+<p>
+	<strong><%=t(:dont_use_services)%></strong>
+	<%= link_to t(:create_account), new_identity_path %> <%=t(:or_login_below)%>
+</p>
+
+<%= form_tag "/auth/identity/callback" do %>
+<div class="field">
+	<%= label_tag :auth_key, t(:email) %>
+	<br>
+	<%= text_field_tag :auth_key %>
+</div>
+<div class="field">
+	<%= label_tag :password %>
+	<br>
+	<%= password_field_tag :password %>
+</div>
+<div class="actions">
+	<%= submit_tag t(:login) %>
+</div>
+<% end %>

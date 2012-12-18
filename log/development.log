@@ -1,0 +1,151 @@
+Connecting to database specified by database.yml
+  [1m[36m (96.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (175.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (39.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20121217051818)
+  [1m[35m (205.8ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `provider` varchar(255), `uid` varchar(255), `name` varchar(255), `email` varchar(255), `token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (149.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20121217051818')[0m
+Migrating to CreateIdentities (20121217052224)
+  [1m[35m (148.5ms)[0m  CREATE TABLE `identities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password_digest` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20121217052224')[0m
+Migrating to CreatePosts (20121217065739)
+  [1m[35m (98.3ms)[0m  CREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` text, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20121217065739')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-18 12:41:19 +0530
+Connecting to database specified by database.yml
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (47.6ms)
+Compiled jquery.js  (3ms)  (pid 3940)
+Compiled jquery_ujs.js  (0ms)  (pid 3940)
+Compiled application.js  (137ms)  (pid 3940)
+Completed 200 OK in 322ms (Views: 320.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/facebook_realtime_updates.css?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /facebook_realtime_updates.css - 200 OK (2ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /layout.css - 200 OK (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /posts.css - 200 OK (2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /session.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /jquery.js - 200 OK (59ms)
+
+
+Started GET "/assets/facebook_realtime_updates.js?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /facebook_realtime_updates.js - 200 OK (2ms)
+
+
+Started GET "/assets/identities.js?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /identities.js - 200 OK (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /posts.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /application.js - 200 OK (11ms)
+
+
+Started GET "/assets/facebook.png" for 127.0.0.1 at 2012-12-18 12:41:20 +0530
+Served asset /facebook.png - 200 OK (1ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-12-18 12:49:29 +0530
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20121217051818)
+Migrating to CreateIdentities (20121217052224)
+Migrating to CreatePosts (20121217065739)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-18 12:51:36 +0530
+Connecting to database specified by database.yml
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 139ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/facebook_realtime_updates.css?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /facebook_realtime_updates.css - 200 OK (2ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /layout.css - 200 OK (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /posts.css - 200 OK (2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /session.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/facebook_realtime_updates.js?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /facebook_realtime_updates.js - 200 OK (2ms)
+
+
+Started GET "/assets/identities.js?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /identities.js - 200 OK (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /posts.js - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /application.js - 200 OK (9ms)
+
+
+Started GET "/assets/facebook.png" for 127.0.0.1 at 2012-12-18 12:51:37 +0530
+Served asset /facebook.png - 200 OK (1ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-12-18 12:51:38 +0530
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-12-18 12:52:01 +0530

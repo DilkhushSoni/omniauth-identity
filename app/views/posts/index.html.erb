@@ -1,0 +1,13 @@
+<%= link_to "Add Post" , new_post_path %>
+<br/></br/>
+<table>
+<% unless @posts.empty? %>	
+	<% @posts.each do |post| %>
+	<tr>
+		<td><%= post.body %></td>
+	</tr>
+	<% end %>
+<% else %>
+	<tr><td>No Posts Added</td></tr>
+<% end %>
+</table>

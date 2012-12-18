@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook</title>  
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+</head>
+<body>
+	
+	<% if current_user %>
+    <h1 style="clear:both;">User Profile</h1>
+    <p>
+      <strong><%=t(:name)%>:</strong>
+      <%= current_user.name %>
+    </p>
+    <p>
+      <strong><%=t(:provider)%>:</strong>
+      <%= current_user.provider %>
+    </p>
+     <p>
+      <%= link_to t(:logout), logout_path %>
+    </p>
+  <% end %>
+	
+	<p style="color: green;"><%= notice %></p>
+  <p style="color: red;"><%= alert %></p>
+	<%= yield %>
+
+</body>
+</html>

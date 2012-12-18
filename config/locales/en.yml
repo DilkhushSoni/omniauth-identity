@@ -1,0 +1,48 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  activerecord:
+    attributes:
+      identity:
+        password_digest: 'Password'
+        
+  #application layout
+  name: "Name"
+  provider: "Provider"
+  omniauth_uid: "OmniAuth UID"
+  logout: "Logout"
+  
+  #dashboard  
+  edit: "Edit"
+  delete: "Delete"
+
+  # sessions
+  signed_in_success_message: "Signed in!"
+  signed_out_success_message: "Signed out!"
+  authentication_failed_message: "Authentication failed, please try again."
+  sign_in: "Sign In"
+  sign_in_services: "Sign in through one of these services:"
+  facebook: "Facebook"
+  post: "Post"
+
+  # user account
+  account_success_update: "Account Updated."
+  send_email_for_password_reset: "Email sent with password reset instructions."
+  no_email_match: "No email matched."
+  password_token_error_message: "Password token doesn't match with our records.Please reset password again"
+  reset_password_success_message: "Password has been reset!"
+  create_account: "Create an account"
+  email: "Email"
+  login: "Login"
+  forgot_password: "Forgot Password"
+  update_password: "Update Password"
+  register: "Register"
+  reset_password: "Reset Password"
+  cancel: "Cancel"
+  update: "Update"
+  edit_account: "Edit Account"
+  prob_this_ac_be_saved: "prohibited this account from being saved:"
+  new_account: "New Account"
+
+  
